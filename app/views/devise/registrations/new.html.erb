@@ -7,14 +7,44 @@
     <%= f.input :email,
                 required: true,
                 autofocus: true,
+                label: false,
+                placeholder: "Email",
                 input_html: { autocomplete: "email" }%>
     <%= f.input :password,
                 required: true,
+                label: false,
+                placeholder: "Password",
                 hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
                 input_html: { autocomplete: "new-password" } %>
     <%= f.input :password_confirmation,
                 required: true,
+                label: false,
+                placeholder: "Confirm Password",
                 input_html: { autocomplete: "new-password" } %>
+    <%= f.input :first_name,
+                required: true,
+                label: false,
+                placeholder: "First Name" %>
+    <%= f.input :last_name,
+                required: true,
+                label: false,
+                placeholder: "Last Name" %>
+    <%= f.input :country,
+                required: true,
+                label: false,
+                placeholder: "Country" %>
+    <%= f.input :city,
+                required: true,
+                label: false,
+                placeholder: "City" %>
+    <%= f.input :address,
+                required: true,
+                label: false,
+                placeholder: "Address" %>
+    <%= f.input :zip_code,
+                required: true,
+                label: false,
+                placeholder: "Zip-code" %>
   </div>
 
   <div class="form-actions">

@@ -10,4 +10,7 @@ class User < ApplicationRecord
   has_many :exchanges
   has_many :items
   has_many :messages
+
+  validates :address, presence: true, length: { minimum: 10 }
+  validates :first_name, :last_name, :country, :city, :zip_code, presence: true
 end

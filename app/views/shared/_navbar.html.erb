@@ -18,7 +18,11 @@
       <%= link_to "Login", new_user_session_path, id: "chats-btn" %>
     <% end %>
   </div>
+  <div class="burguer-menu">
+    <div class="lines"></div>
+  </div>
 </div>
+
 <div class="navbar-dropdown" hidden>
   <%= link_to "#" do %>
     <div class="link">
@@ -35,4 +39,47 @@
       <p>Logout</p>
     </div>
   <% end %>
+</div>
+
+<div class="navbar-dropdown-mobile" hidden>
+  <div class="links">
+    <% if user_signed_in? %>
+      <%= link_to "#" do %>
+        <div class="link">
+          <p>Upload Item</p>
+        </div>
+      <% end %>
+      <%= link_to "#" do %>
+        <div class="link">
+          <p>Chats</p>
+        </div>
+      <% end %>
+      <%= link_to "#" do %>
+        <div class="link">
+          <p>Exchanges</p>
+        </div>
+      <% end %>
+      <%= link_to "#" do %>
+        <div class="link">
+          <p>Profile</p>
+        </div>
+      <% end %>
+      <%= link_to destroy_user_session_path, method: :delete do %>
+        <div class="link">
+          <p>Logout</p>
+        </div>
+      <% end %>
+    <% else %>
+      <%= link_to "#" do %>
+        <div class="link">
+          <p>Upload Item</p>
+        </div>
+      <% end %>
+      <%= link_to new_user_session_path do %>
+        <div class="link">
+          <p>Login</p>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
 </div>

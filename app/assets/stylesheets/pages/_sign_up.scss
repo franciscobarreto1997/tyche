@@ -22,6 +22,14 @@
         border-radius: 3px;
       }
     }
+    #login {
+      display: none;
+      color: black;
+      text-decoration: none;
+      padding: 5px 5px;
+      border: 1px solid black;
+      border-radius: 3px;
+    }
   }
   h3 {
     margin-top: 50px;
@@ -70,6 +78,104 @@
       background-color: white;
       margin-top: 20px;
       margin-left: 470px;
+
+      #sign-up-btn {
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 5px;
+        color: white;
+        background-color: black;
+      }
+    }
+  }
+}
+
+@media (max-width: 880px) {
+
+  .sign-up-container {
+
+    .sign-up-navbar {
+      width: 100%;
+      padding: 0 10px;
+    }
+    .sign-up-card {
+      display: block;
+      width: 90%;
+      height: 90%;
+
+      .advantages {
+        width: 100%;
+        margin: 0;
+        padding: 30px 30px;
+        height: 280px;
+      }
+      #new_user {
+        margin: 0;
+        width: 90%;
+        margin-top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+}
+
+@media (max-width: 710px) {
+  .sign-up-container {
+    .sign-up-card {
+      #new_user {
+        margin-top: 70px;
+      }
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .sign-up-container {
+    .sign-up-card {
+      #new_user {
+        margin-top: 90px;
+      }
+    }
+  }
+}
+@media (max-width: 525px) {
+  .sign-up-container {
+    .sign-up-card {
+      #new_user {
+        margin-top: 130px;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .sign-up-container {
+    .sign-up-card {
+      #new_user {
+        margin-top: 160px;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .sign-up-container {
+    .sign-up-navbar {
+      p {
+        display: none;
+      }
+      #login {
+        display: flex;
+      }
+    }
+    .sign-up-card {
+      height: 120%;
+      #new_user {
+        margin-top: 280px;
+        width: 97%;
+      }
     }
   }
 }

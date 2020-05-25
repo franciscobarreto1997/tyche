@@ -10,11 +10,15 @@ const toggleNavbarDropdownMobile = () => {
       if (!menuOpen) {
         burguerMenu.classList.add('open');
         dropdown.removeAttribute('hidden');
+        setTimeout(() => {
+          dropdown.classList.remove('opacity');
+        }, 10)
         disableScroll.on();
         menuOpen = true;
       } else {
         burguerMenu.classList.remove('open');
         dropdown.setAttribute('hidden', '');
+        dropdown.classList.add('opacity');
         disableScroll.off();
         menuOpen = false;
       }

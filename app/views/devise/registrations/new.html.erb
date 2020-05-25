@@ -1,55 +1,86 @@
-<h2>Sign up</h2>
-
-<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= f.error_notification %>
-
-  <div class="form-inputs">
-    <%= f.input :email,
-                required: true,
-                autofocus: true,
-                label: false,
-                placeholder: "Email",
-                input_html: { autocomplete: "email" }%>
-    <%= f.input :password,
-                required: true,
-                label: false,
-                placeholder: "Password",
-                hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
-                input_html: { autocomplete: "new-password" } %>
-    <%= f.input :password_confirmation,
-                required: true,
-                label: false,
-                placeholder: "Confirm Password",
-                input_html: { autocomplete: "new-password" } %>
-    <%= f.input :first_name,
-                required: true,
-                label: false,
-                placeholder: "First Name" %>
-    <%= f.input :last_name,
-                required: true,
-                label: false,
-                placeholder: "Last Name" %>
-    <%= f.input :country,
-                required: true,
-                label: false,
-                placeholder: "Country" %>
-    <%= f.input :city,
-                required: true,
-                label: false,
-                placeholder: "City" %>
-    <%= f.input :address,
-                required: true,
-                label: false,
-                placeholder: "Address" %>
-    <%= f.input :zip_code,
-                required: true,
-                label: false,
-                placeholder: "Zip-code" %>
+<div class="sign-up-container">
+  <div class="sign-up-navbar">
+    <%= link_to root_path do %>
+      <%= image_tag "tyche-logo.png" %>
+    <% end %>
+    <p>Already have an account? <a href="/users/sign_in">Login</a></p>
   </div>
+  <h3>Sign up for free and <br>start bartering items today</h3>
+  <div class="sign-up-card">
+    <div class="advantages">
+      <div class="advantage">
+        <div class="title">
+          <i class="far fa-smile"></i>
+          <h4>Free account</h4>
+        </div>
+        <p>List your all your items for free, only pay the shipping costs and we handle the rest!</p>
+      </div>
+      <div class="advantage">
+        <div class="title">
+          <i class="fas fa-check"></i>
+          <h4>Secure exchanges</h4>
+        </div>
+        <p>With Tyche you never have to worry about getting any faulty products, we meticulously inspect both items in an exchange to make sure neither party is sending faulty or inauthentic items.</p>
+      </div>
+      <div class="advantage">
+        <div class="title">
+          <i class="fas fa-globe-europe"></i>
+          <h4>Barter with the world</h4>
+        </div>
+        <p>Exchange goods with the whole world without using any money!</p>
+      </div>
+    </div>
+    <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= f.error_notification %>
 
-  <div class="form-actions">
-    <%= f.button :submit, "Sign up" %>
+      <div class="form-inputs">
+        <%= f.input :email,
+                    required: true,
+                    autofocus: true,
+                    label: false,
+                    placeholder: "Email",
+                    input_html: { autocomplete: "email" }%>
+        <%= f.input :password,
+                    required: true,
+                    label: false,
+                    placeholder: "Password",
+                    hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
+                    input_html: { autocomplete: "new-password" } %>
+        <%= f.input :password_confirmation,
+                    required: true,
+                    label: false,
+                    placeholder: "Confirm Password",
+                    input_html: { autocomplete: "new-password" } %>
+        <%= f.input :first_name,
+                    required: true,
+                    label: false,
+                    placeholder: "First Name" %>
+        <%= f.input :last_name,
+                    required: true,
+                    label: false,
+                    placeholder: "Last Name" %>
+        <%= f.input :country,
+                    required: true,
+                    label: false,
+                    placeholder: "Country" %>
+        <%= f.input :city,
+                    required: true,
+                    label: false,
+                    placeholder: "City" %>
+        <%= f.input :address,
+                    required: true,
+                    label: false,
+                    placeholder: "Address" %>
+        <%= f.input :zip_code,
+                    required: true,
+                    label: false,
+                    placeholder: "Zip-code" %>
+      </div>
+
+      <div class="form-actions">
+        <%= f.button :submit, "Sign up" %>
+      </div>
+    <% end %>
   </div>
-<% end %>
+</div>
 
-<%= render "devise/shared/links" %>

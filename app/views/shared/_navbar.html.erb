@@ -11,7 +11,7 @@
   </div>
   <div class="links">
     <%= link_to "Upload Item", new_item_path, id: "upload-btn" %>
-    <%= link_to "Chats", "#", id: "chats-btn" %>
+    <%= link_to "About", "#", id: "chats-btn" %>
     <% if user_signed_in? %>
       <i class="fas fa-user" id="user-btn"></i>
     <% else %>
@@ -41,7 +41,7 @@
   <% end %>
 </div>
 
-<div class="navbar-dropdown-mobile" hidden>
+<div class="navbar-dropdown-mobile opacity" hidden>
   <div class="links">
     <% if user_signed_in? %>
       <%= link_to "#" do %>

@@ -149,6 +149,7 @@
   bottom: 0;
   right: 0;
   left: 0;
+  transition: .5s all;
 
   .links {
     margin-top: 70px;
@@ -160,16 +161,18 @@
         width: 100%;
         border-bottom: 1px solid #D4D4D2;
         text-align: center;
-        // padding: 10px 10px;
         p {
           font-size: 40px;
           color: black;
+          font-weight: 200;
         }
       }
     }
   }
+}
 
-
+.opacity {
+  opacity: 0;
 }
 
 @media (max-width: 1250px) {

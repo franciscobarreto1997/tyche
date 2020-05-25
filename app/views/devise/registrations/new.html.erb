@@ -4,6 +4,7 @@
       <%= image_tag "tyche-logo.png" %>
     <% end %>
     <p>Already have an account? <a href="/users/sign_in">Login</a></p>
+    <a href="/users/sign_in" id="login">Login</a>
   </div>
   <h3>Sign up for free and <br>start bartering items today</h3>
   <div class="sign-up-card">
@@ -78,7 +79,7 @@
       </div>
 
       <div class="form-actions">
-        <%= f.button :submit, "Sign up" %>
+        <%= f.button :submit, "Sign up", id: "sign-up-btn" %>
       </div>
     <% end %>
   </div>

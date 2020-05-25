@@ -12,6 +12,27 @@
   <div class="links">
     <%= link_to "Upload Item", new_item_path, id: "upload-btn" %>
     <%= link_to "Chats", "#", id: "chats-btn" %>
-    <%= link_to "Log in", new_user_session_path, id: "chats-btn" %>
+    <% if user_signed_in? %>
+      <i class="fas fa-user" id="user-btn"></i>
+    <% else %>
+      <%= link_to "Login", new_user_session_path, id: "chats-btn" %>
+    <% end %>
   </div>
+</div>
+<div class="navbar-dropdown" hidden>
+  <%= link_to "#" do %>
+    <div class="link">
+      <p>Exchanges</p>
+    </div>
+  <% end %>
+  <%= link_to "#" do %>
+    <div class="link">
+      <p>Profile</p>
+    </div>
+  <% end %>
+  <%= link_to destroy_user_session_path, method: :delete do %>
+    <div class="link">
+      <p>Logout</p>
+    </div>
+  <% end %>
 </div>

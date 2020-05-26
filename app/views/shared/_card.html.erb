@@ -5,7 +5,13 @@
 
       </div>
       <div class="info">
-        <h4><%= item.title %></h4>
+        <div class="left">
+          <h4><%= item.title %></h4>
+          <p><%= item.user.city %></p>
+        </div>
+        <div class="right">
+          <i class="far fa-heart" id="card-heart"></i>
+        </div>
       </div>
   </div>
   <% end %>

@@ -6,13 +6,13 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# Category.create!(name: "Books")
-# Category.create!(name: "Technology")
-# Category.create!(name: "Clothing")
-# Category.create!(name: "Furniture")
-# Category.create!(name: "Tools")
-# Category.create!(name: "Toys")
-# Category.create!(name: "Others")
+Category.create!(name: "Books")
+Category.create!(name: "Technology")
+Category.create!(name: "Clothing")
+Category.create!(name: "Furniture")
+Category.create!(name: "Tools")
+Category.create!(name: "Toys")
+Category.create!(name: "Others")
 
 Item.destroy_all
 

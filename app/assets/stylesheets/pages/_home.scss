@@ -1,1 +1,50 @@
-// Specific CSS for your home-page
+.landing-container {
+  .categories {
+    margin-top: 50px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      font-weight: 700;
+    }
+
+    .buttons {
+      display: flex;
+      padding: 50px 30px;
+
+      .category {
+        margin: 30px;
+        text-align: center;
+        cursor: pointer;
+
+        i {
+          font-size: 80px;
+          transition: .5s all;
+
+          &:hover {
+            font-size: 90px;
+            color: #F7F701;
+          }
+        }
+        p {
+          margin-top: 10px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .landing-container {
+    .categories {
+      .buttons {
+        width: 80%;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  }
+}

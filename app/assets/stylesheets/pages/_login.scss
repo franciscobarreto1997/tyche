@@ -51,3 +51,21 @@
     margin-top: 40px;
   }
 }
+
+@media (max-width: 820px) {
+  .login-container {
+    .login-navbar {
+      width: 100%;
+      padding: 10px 10px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .login-container {
+    #new_user {
+      margin-top: 50px;
+      width: 80%;
+    }
+  }
+}

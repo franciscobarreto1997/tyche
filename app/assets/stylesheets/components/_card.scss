@@ -1,8 +1,50 @@
-.card {
-  padding: 10px 10px;
-  margin: 10px;
-  .picture {
-    width: 300px;
-    height: 225px;
+a {
+  color: black;
+  text-decoration: none;
+  &:hover {
+    color: black;
+    text-decoration: none;
+  }
+  .card {
+    padding: 30px 20px 5px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: .5s all;
+
+    &:hover {
+      border: 1px solid black;
+    }
+    .picture {
+      width: 300px;
+      height: 225px;
+      background: url('https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2167&q=80');
+      background-size: cover;
+    }
+    .info {
+      margin-top: 10px;
+      display: flex;
+      .left {
+        width: 80%;
+        h4 {
+          font-size: 20px;
+        }
+        p {
+          color: #6B6E77;
+        }
+      }
+
+      .right {
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        i {
+          font-size: 30px;
+          color: rgba(0, 0, 0, 0.125);
+          z-index: 2;
+        }
+      }
+    }
+
   }
 }

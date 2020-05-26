@@ -53,6 +53,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      padding: 50px 30px;
     }
   }
 }
@@ -86,6 +87,14 @@
             }
           }
         }
+      }
+    }
+
+    .featured {
+      padding: 50px 0px;
+
+      .items {
+        padding: 50px 0px;
       }
     }
   }

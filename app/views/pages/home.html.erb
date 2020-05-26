@@ -2,36 +2,54 @@
   <div class="categories">
     <h2>Categories</h2>
     <div class="buttons">
-      <div class="category">
-          <i class="fas fa-book"></i>
-          <p>Books</p>
-      </div>
-      <div class="category">
-          <i class="fas fa-laptop"></i>
-          <p>Tech</p>
-      </div>
-      <div class="category">
-          <i class="fas fa-tshirt"></i>
-          <p>Clothing</p>
-      </div>
-      <div class="category">
-          <i class="fas fa-couch"></i>
-          <p>Furniture</p>
-      </div>
-      <div class="category">
-          <i class="fas fa-tools"></i>
-          <p>Tools</p>
-      </div>
-      <div class="category">
-          <i class="fas fa-robot"></i>
-          <p>Toys</p>
-      </div>
-      <div class="category">
-          <i class="fas fa-question"></i>
-          <p>Others</p>
-      </div>
-
+      <%= link_to items_path(category: "Books") do %>
+        <div class="category">
+            <i class="fas fa-book"></i>
+            <p>Books</p>
+        </div>
+      <% end %>
+      <%= link_to items_path(category: "Technology") do %>
+        <div class="category">
+            <i class="fas fa-laptop"></i>
+            <p>Tech</p>
+        </div>
+      <% end %>
+      <%= link_to items_path(category: "Clothing") do %>
+        <div class="category">
+            <i class="fas fa-tshirt"></i>
+            <p>Clothing</p>
+        </div>
+      <% end %>
+      <%= link_to items_path(category: "Furniture") do %>
+        <div class="category">
+            <i class="fas fa-couch"></i>
+            <p>Furniture</p>
+        </div>
+      <% end %>
+      <%= link_to items_path(category: "Tools") do %>
+        <div class="category">
+            <i class="fas fa-tools"></i>
+            <p>Tools</p>
+        </div>
+      <% end %>
+      <%= link_to items_path(category: "Toys") do %>
+        <div class="category">
+            <i class="fas fa-robot"></i>
+            <p>Toys</p>
+        </div>
+      <% end %>
+      <%= link_to items_path(category: "Others") do %>
+        <div class="category">
+            <i class="fas fa-question"></i>
+            <p>Others</p>
+        </div>
+      <% end %>
     </div>
-
+  </div>
+  <div class="featured">
+    <h2>Featured items</h2>
+    <div class="items">
+      <%= render 'shared/card' %>
+    </div>
   </div>
 </div>

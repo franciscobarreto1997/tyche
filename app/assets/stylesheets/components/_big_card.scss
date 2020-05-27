@@ -1,0 +1,45 @@
+.big-card {
+  width: 100%;
+  padding: 10px 0px;
+  display: flex;
+
+  .picture {
+    width: 200px;
+    height: 150px;
+    background: url('https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2167&q=80');
+    background-size: cover;
+  }
+
+  .left {
+    padding: 3px 10px;
+    width: 70%;
+
+    .details {
+      height: 85%;
+    }
+
+    .date {
+      height: 15%;
+      color: #2C2D32;
+      font-weight: 200;
+    }
+  }
+  .right {
+    width: 10%;
+    .user {
+      height: 50%;
+
+      .profile-picture {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background: url('https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1298&q=80');
+        background-size: cover;
+      }
+    }
+    .heart {
+      height: 50%;
+    }
+
+  }
+}

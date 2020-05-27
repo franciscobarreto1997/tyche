@@ -1,0 +1,49 @@
+.footer {
+  height: 350px;
+  background-color: black;
+  padding: 70px 15%;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+      img {
+        width: 90px;
+      }
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      a {
+        color: white;
+        border-bottom: 1px solid black;
+
+        &:hover {
+          border-bottom: 1px solid white;
+        }
+      }
+    }
+  }
+  .bottom {
+    width: 100%;
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    .social-media {
+      i {
+        color: white;
+        margin-top: 10px;
+        margin-right: 5px;
+      }
+    }
+
+    .brand {
+      color: white;
+      margin-top: 10px;
+    }
+  }
+}

@@ -6,7 +6,7 @@
       <div class="left">
         <div class="details">
           <h4><%= item.title %></h4>
-          <p>Looking for: <%= item.looking_for %></p>
+          <p>Looking for: <%= format_text(item.looking_for) %></p>
         </div>
         <div class="date">
           <p><%= item.created_at %></p>
@@ -17,7 +17,9 @@
           <div class="profile-picture">
           </div>
         </div>
-        <div class="heart"></div>
+        <div class="heart">
+          <i class="far fa-heart" id="card-heart"></i>
+        </div>
       </div>
     </div>
   <% end %>
